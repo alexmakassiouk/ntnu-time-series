@@ -119,11 +119,13 @@ def plot_rolling_mean_together(
     ax2.tick_params(axis="y", labelcolor="green")
     if end_year - start_year == 0:
         plt.title(
-            f"Precipitation and electricity production 6-months rolling windows for year {start_year}"
+            f"""Precipitation and electricity production 
+            6-months rolling windows for year {start_year}"""
         )
     else:
         plt.title(
-            f"Precipitation and electricity production 6-months rolling windows for years {start_year, end_year}"
+            f"""Precipitation and electricity production
+             6-months rolling windows for years {start_year, end_year}"""
         )
     fig.tight_layout()
     fig.legend()
@@ -324,7 +326,8 @@ def main():
         df_merged["value_electricity"]
     )
     print(
-        f"\nCorrelation between Precipitation and Electricity Production: {correlation}"
+        f"""\nCorrelation between Precipitation 
+        and Electricity Production: {correlation}"""
     )
 
     # PART 2: Transformations
